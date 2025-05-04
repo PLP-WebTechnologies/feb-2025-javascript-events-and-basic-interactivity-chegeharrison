@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alien Catcher Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>👽 Alien Catcher Game</h1>
+    <button id="startBtn">Start Game</button>
+    <button id="themeBtn">Toggle Theme</button>
+    <p>Score: <span id="score">0</span></p>
+  </header>
+
+  <main>
+    <div class="game-area">
+      <img id="alien" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs7OTHcpnit3qCWyAzEQ-uO5AFEcARrc0sSA&s" alt="Alien" />
+    </div>
+
+    <section class="accordion">
+      <button class="accordion-btn">Game Instructions 📜</button>
+      <div class="accordion-content">
+        <p>Click the alien to score points. Use arrow keys to move it! Double-click for bonus!</p>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Alien Gallery</h2>
+      <div class="slideshow">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs7OTHcpnit3qCWyAzEQ-uO5AFEcARrc0sSA&s" class="slide" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBbXQS0k58RK18YnNqbQS8QM8LLv84HYs3nA&s" class="slide hidden" />
+        <img src="https://t4.ftcdn.net/jpg/05/71/34/01/360_F_571340103_SH8taGHsztOY4YA2AkRIlJRuBDFBGUbQ.jpg" class="slide hidden" />
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Join the Space Club 🚀</h2>
+      <form id="signupForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+        <p id="formFeedback"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alien Catcher Inc.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
